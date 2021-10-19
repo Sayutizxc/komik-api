@@ -3,6 +3,7 @@ package repository
 import (
 	"github.com/gocolly/colly"
 	"github.com/sayutizxc/klikmanga-scraper/model"
+	"strings"
 )
 
 func ListComicRepository(page string, limit string) ([]model.Comic, error) {
@@ -32,9 +33,10 @@ func getListComic(page string, limit string) ([]model.Comic, error) {
 			var chapter model.Chapter
 			chapter.ChapterUrl = element.ChildAttr("span.chapter.font-meta > a", "href")
 			chapter.Chapter = element.ChildText("span.chapter.font-meta > a")
-			chapter.Date = element.ChildAttr("span.post-on.font-meta > span > a", "title")
+			chapter.Date = element.ChildText("span.post-on.font-meta")
 			if chapter.Date == "" {
-				chapter.Date = element.ChildText("span.post-on.font-meta")
+				chapter.Date = element.ChildAttr("span.post-on.font-meta > span > a", "title")
+				chapter.Date = strings.Replace(chapter.Date, "ago", "yang lalu", 1)
 			}
 			comic.LastChapter = append(comic.LastChapter, chapter)
 		})
