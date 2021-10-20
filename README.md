@@ -108,7 +108,7 @@ Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detail
       {
         "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-8/",
         "chapter": "Chapter 8",
-        "date": "11 jam yang lalu"
+        "date": "20 jam yang lalu"
       },
       {
         "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-7/",
@@ -166,16 +166,10 @@ Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detail
         "date": "Jun 18, 2020 at 11:16 am"
       },
       {
-        "name": "AlbaituZaky",
+        "name": "Albaitu",
         "profile_pic": "https://secure.gravatar.com/avatar/5f9b3896067817113493fc0d7565a2e5?s=60&d=mm&r=g",
-        "comment": "Tiap hari min updateAkhirnya, lanjuuuuuutttttt",
-        "date": "Jun 15, 2020 at 8:00 pm Jul 27, 2020 at 6:36 pm"
-      },
-      {
-        "name": "Zaky",
-        "profile_pic": "https://secure.gravatar.com/avatar/13615bdb728e0307f84ffb00f3bcc2f3?s=60&d=mm&r=g",
-        "comment": "Akhirnya, lanjuuuuuutttttt",
-        "date": "Jul 27, 2020 at 6:36 pm"
+        "comment": "Tiap hari min update",
+        "date": "Jun 15, 2020 at 8:00 pm"
       },
       {
         "name": "Aditama",
