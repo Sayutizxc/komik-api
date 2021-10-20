@@ -45,12 +45,12 @@ func getDetailKomik(url string) (model.DetailComic, error) {
 			}
 			detailComic.Chapters = append(detailComic.Chapters, chapter)
 		})
-		e.ForEach("li.comment", func(_ int, element *colly.HTMLElement) {
+		e.ForEach("ol.comment-list > li.comment", func(_ int, element *colly.HTMLElement) {
 			var comment model.Comment
-			comment.Name = element.ChildText("div.comment-author > h6")
-			comment.ProfilePic = element.ChildAttr("div.comment-avatar > img", "src")
-			comment.Comment = element.ChildText("div.comment-content > p")
-			comment.Date = element.ChildText("div.comment-metadata > a")
+			comment.Name = element.ChildText("li.depth-1 > article > div > div.comment-author > h6")
+			comment.ProfilePic = element.ChildAttr("li.depth-1 > article > div > div.comment-avatar > img", "src")
+			comment.Comment = element.ChildText("li.depth-1 > article > div > div.comment-content > p")
+			comment.Date = element.ChildText("li.depth-1 > article > div > div.comment-metadata > a")
 			detailComic.Comments = append(detailComic.Comments, comment)
 		})
 	})
