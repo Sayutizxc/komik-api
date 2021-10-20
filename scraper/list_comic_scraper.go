@@ -1,4 +1,4 @@
-package repository
+package scraper
 
 import (
 	"github.com/gocolly/colly"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func ListComicRepository(page string, limit string) ([]model.Comic, error) {
+func ListComicScraper(page string, limit string) ([]model.Comic, error) {
 	comics, err := getListComic(page, limit)
 	if err != nil {
 		return nil, err

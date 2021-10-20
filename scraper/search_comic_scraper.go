@@ -1,4 +1,4 @@
-package repository
+package scraper
 
 import (
 	"github.com/gocolly/colly"
@@ -6,15 +6,15 @@ import (
 	"strings"
 )
 
-func SearchComicRepository(s string, page string, limit string) ([]model.Comic, error) {
-	comics, err := getSearchComicRepository(s, page, limit)
+func SearchComicScraper(s string, page string, limit string) ([]model.Comic, error) {
+	comics, err := getSearchComic(s, page, limit)
 	if err != nil {
 		return nil, err
 	}
 	return comics, nil
 }
 
-func getSearchComicRepository(s string, page string, limit string) ([]model.Comic, error) {
+func getSearchComic(s string, page string, limit string) ([]model.Comic, error) {
 	var comics []model.Comic
 	c := colly.NewCollector()
 

@@ -1,4 +1,4 @@
-package repository
+package scraper
 
 import (
 	"github.com/gocolly/colly"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func DetailComicRepository(url string) (model.DetailComic, error) {
+func DetailComicScraper(url string) (model.DetailComic, error) {
 	detailComic, err := getDetailKomik(url)
 	if err != nil {
 		return model.DetailComic{}, err

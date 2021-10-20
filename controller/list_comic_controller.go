@@ -3,7 +3,7 @@ package controller
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/sayutizxc/klikmanga-scraper/model"
-	"github.com/sayutizxc/klikmanga-scraper/service"
+	"github.com/sayutizxc/klikmanga-scraper/scraper"
 	"strconv"
 )
 
@@ -21,7 +21,7 @@ func ListComicController(c *fiber.Ctx) error {
 	}
 	page = strconv.Itoa(pageInt - 1)
 
-	comics, err := service.ListComicService(page, limit)
+	comics, err := scraper.ListComicScraper(page, limit)
 	if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(model.Response{
 			Status:  fiber.StatusInternalServerError,

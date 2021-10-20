@@ -1,19 +1,19 @@
-package repository
+package scraper
 
 import (
 	"github.com/gocolly/colly"
 	"github.com/sayutizxc/klikmanga-scraper/model"
 )
 
-func ChapterImagesRepository(url string) (model.ChapterImages, error) {
-	chapterImages, err := getChapterImagesRepository(url)
+func ChapterImagesScraper(url string) (model.ChapterImages, error) {
+	chapterImages, err := getChapterImages(url)
 	if err != nil {
 		return model.ChapterImages{}, err
 	}
 	return chapterImages, nil
 }
 
-func getChapterImagesRepository(url string) (model.ChapterImages, error) {
+func getChapterImages(url string) (model.ChapterImages, error) {
 	var chapterImages model.ChapterImages
 	chapterImages.Url = url
 	c := colly.NewCollector()
