@@ -53,8 +53,9 @@ func getListComic(page string, limit string) ([]model.Comic, error) {
 		"vars[posts_per_page]": limit,
 		"vars[post_type]":      "wp-manga",
 		"vars[meta_key]":       "_latest_update",
+		"vars[wp-manga-tag]":   "baca-komik",
 	}
-	err := c.Post("https://klikmanga.com/wp-admin/admin-ajax.php", payload)
+	err := c.Post("https://klikmanga.id/wp-admin/admin-ajax.php", payload)
 	if err != nil {
 		return nil, err
 	}
