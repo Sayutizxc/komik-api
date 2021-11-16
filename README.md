@@ -1,6 +1,5 @@
 # Unofficial Klikmanga Api
 
-
 - <a href="#daftar-komik-terbaru">Daftar Komik terbaru<a/>
 - <a href="#detail-komik">Detail Komik<a/>
 - <a href="#chapter">Chapter<a/>
@@ -9,9 +8,9 @@
 ## Daftar Komik Terbaru
 
 ```http
-  http://127.0.0.1:3000/api/comic/home/{page}?limit={limit}
-  http://127.0.0.1:3000/api/comic/home/
-  http://127.0.0.1:3000/api/comic/home/1?limit=20
+  https://klikmanga.herokuapp.com/api/comic/home/{page}?limit={limit}
+  https://klikmanga.herokuapp.com/api/comic/home/
+  https://klikmanga.herokuapp.com/api/comic/home/1?limit=20
 ```
 
 Parameter page bersifat opsional,defaultnya adalah 1, yaitu halaman pertama, parameter page hanya dapat di isi dengan angka,dan harus lebih dari 0
@@ -20,7 +19,7 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 
 ### Contoh
 
-> http://127.0.0.1:3000/api/comic/home/1?limit=2
+> https://klikmanga.herokuapp.com/api/comic/home/1?limit=2
 
 ```json
   {
@@ -70,15 +69,15 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 ## Detail Komik
 
 ```http
-  http://127.0.0.1:3000/api/comic/detail?url={url}
-  http://127.0.0.1:3000/api/comic/detail?url=https://klikmanga.com/manga/yuan-zun/
+  https://klikmanga.herokuapp.com/api/comic/detail?url={url}
+  https://klikmanga.herokuapp.com/api/comic/detail?url=https://klikmanga.com/manga/yuan-zun/
 ```
 
 Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detailnya
 
 ### Contoh
 
-> http://127.0.0.1:3000/api/comic/detail?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/
+> https://klikmanga.herokuapp.com/api/comic/detail?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/
 
 ```json
   {
@@ -191,15 +190,15 @@ Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detail
 ## Chapter
 
 ```http
-  http://127.0.0.1:3000/api/comic/chapter?url={url}
-  http://127.0.0.1:3000/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/
+  https://klikmanga.herokuapp.com/api/comic/chapter?url={url}
+  https://klikmanga.herokuapp.com/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/
 ```
 
 Query parameter url wajib di isi dengan url dari chapter yang ingin dilihat gambarnya
 
 ### Contoh
 
-> http://127.0.0.1:3000/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/
+> https://klikmanga.herokuapp.com/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/
 
 ```json
   {
@@ -253,9 +252,9 @@ Query parameter url wajib di isi dengan url dari chapter yang ingin dilihat gamb
 ## Pencarian Komik
 
 ```http
-  http://127.0.0.1:3000/api/comic/search/{page}?s={keyword}&limit={limit}
-  http://127.0.0.1:3000/api/comic/search/1?s=dark&limit=2
-  http://127.0.0.1:3000/api/comic/search/?s=dark
+  https://klikmanga.herokuapp.com/api/comic/search/{page}?s={keyword}&limit={limit}
+  https://klikmanga.herokuapp.com/api/comic/search/1?s=dark&limit=2
+  https://klikmanga.herokuapp.com/api/comic/search/?s=dark
 ```
 
 Parameter page bersifat opsional,defaultnya adalah 1, yaitu halaman pertama, parameter page hanya dapat di isi dengan angka,dan harus lebih dari 0
@@ -266,7 +265,7 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 
 ### Contoh
 
-> http://127.0.0.1:3000/api/comic/search/1?s=dark&limit=2
+> https://klikmanga.herokuapp.com/api/comic/search/1?s=dark&limit=2
 
 ```json
   {
