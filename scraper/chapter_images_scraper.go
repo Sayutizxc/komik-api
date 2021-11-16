@@ -1,6 +1,8 @@
 package scraper
 
 import (
+	"strings"
+
 	"github.com/gocolly/colly"
 	"github.com/sayutizxc/klikmanga-scraper/model"
 )
@@ -35,6 +37,7 @@ func getChapterImages(url string) (model.ChapterImages, error) {
 		})
 	})
 
+	url = strings.Replace(url, "?style=list", "", -1)
 	if err := c.Visit(url + "?style=list"); err != nil {
 		return model.ChapterImages{}, err
 	}
