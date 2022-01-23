@@ -8,9 +8,9 @@
 ## Daftar Komik Terbaru
 
 ```http
-  https://klikmanga.herokuapp.com/api/comic/home/{page}?limit={limit}
-  https://klikmanga.herokuapp.com/api/comic/home/
-  https://klikmanga.herokuapp.com/api/comic/home/1?limit=20
+  https://api.sayuti.codes/api/comic/home/{page}?limit={limit}
+  https://api.sayuti.codes/api/comic/home/
+  https://api.sayuti.codes/api/comic/home/1?limit=20
 ```
 
 Parameter page bersifat opsional,defaultnya adalah 1, yaitu halaman pertama, parameter page hanya dapat di isi dengan angka,dan harus lebih dari 0
@@ -19,7 +19,7 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 
 ### Contoh
 
-> https://klikmanga.herokuapp.com/api/comic/home/1?limit=2
+> https://api.sayuti.codes/api/comic/home/1?limit=2
 
 ```json
   {
@@ -69,15 +69,15 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 ## Detail Komik
 
 ```http
-  https://klikmanga.herokuapp.com/api/comic/detail?url={url}
-  https://klikmanga.herokuapp.com/api/comic/detail?url=https://klikmanga.com/manga/yuan-zun/
+  https://api.sayuti.codes/api/comic/detail?url={url}
+  https://api.sayuti.codes/api/comic/detail?url=https://klikmanga.com/manga/yuan-zun/
 ```
 
 Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detailnya
 
 ### Contoh
 
-> https://klikmanga.herokuapp.com/api/comic/detail?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/
+> https://api.sayuti.codes/api/comic/detail?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/
 
 ```json
   {
@@ -190,15 +190,15 @@ Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detail
 ## Chapter
 
 ```http
-  https://klikmanga.herokuapp.com/api/comic/chapter?url={url}
-  https://klikmanga.herokuapp.com/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/
+  https://api.sayuti.codes/api/comic/chapter?url={url}
+  https://api.sayuti.codes/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/
 ```
 
 Query parameter url wajib di isi dengan url dari chapter yang ingin dilihat gambarnya
 
 ### Contoh
 
-> https://klikmanga.herokuapp.com/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/
+> https://api.sayuti.codes/api/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/
 
 ```json
   {
@@ -252,9 +252,9 @@ Query parameter url wajib di isi dengan url dari chapter yang ingin dilihat gamb
 ## Pencarian Komik
 
 ```http
-  https://klikmanga.herokuapp.com/api/comic/search/{page}?s={keyword}&limit={limit}
-  https://klikmanga.herokuapp.com/api/comic/search/1?s=dark&limit=2
-  https://klikmanga.herokuapp.com/api/comic/search/?s=dark
+  https://api.sayuti.codes/api/comic/search/{page}?s={keyword}&limit={limit}
+  https://api.sayuti.codes/api/comic/search/1?s=dark&limit=2
+  https://api.sayuti.codes/api/comic/search/?s=dark
 ```
 
 Parameter page bersifat opsional,defaultnya adalah 1, yaitu halaman pertama, parameter page hanya dapat di isi dengan angka,dan harus lebih dari 0
@@ -265,7 +265,7 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 
 ### Contoh
 
-> https://klikmanga.herokuapp.com/api/comic/search/1?s=dark&limit=2
+> https://api.sayuti.codes/api/comic/search/1?s=dark&limit=2
 
 ```json
   {
