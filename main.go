@@ -15,7 +15,7 @@ func main() {
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Dokumentasi sementara bisa dibaca di : https://github.com/Sayutizxc/klikmanga-api")
 	})
-	comic := app.Group("/api/comic")
+	comic := app.Group("/comic")
 	comic.Get("/home/:page?", controller.ListComicController)
 	comic.Get("/detail", controller.DetailComicController)
 	comic.Get("/chapter", controller.ChapterImagesController)
