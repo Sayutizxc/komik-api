@@ -37,8 +37,16 @@ func SearchComicController(c *fiber.Ctx) error {
 			Data:    nil,
 		})
 	}
-	return c.Status(fiber.StatusOK).JSON(model.Response{
-		Status: fiber.StatusOK,
-		Data:   comics,
+	status := fiber.StatusOK
+	message := "Ok"
+	if len(comics) == 0 {
+		status = fiber.StatusNotFound
+		message = "Not Found"
+		comics = nil
+	}
+	return c.Status(status).JSON(model.Response{
+		Status:  status,
+		Message: message,
+		Data:    comics,
 	})
 }

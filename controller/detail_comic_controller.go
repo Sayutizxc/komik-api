@@ -9,15 +9,23 @@ import (
 func DetailComicController(c *fiber.Ctx) error {
 	url := c.Query("url", "")
 	detailComic, err := scraper.DetailComicScraper(url)
+	status := fiber.StatusOK
 	if err != nil {
-		return c.Status(fiber.StatusInternalServerError).JSON(model.Response{
-			Status:  fiber.StatusInternalServerError,
+		if err.Error() == "Not Found" {
+			status = fiber.StatusNotFound
+		} else {
+			status = fiber.StatusInternalServerError
+		}
+		return c.Status(status).JSON(model.Response{
+			Status:  status,
 			Message: err.Error(),
 			Data:    nil,
 		})
 	}
+
 	return c.Status(fiber.StatusOK).JSON(model.Response{
-		Status: fiber.StatusOK,
-		Data:   detailComic,
+		Status:  fiber.StatusOK,
+		Message: "Ok",
+		Data:    detailComic,
 	})
 }

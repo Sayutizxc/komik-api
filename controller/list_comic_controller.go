@@ -30,7 +30,8 @@ func ListComicController(c *fiber.Ctx) error {
 		})
 	}
 	return c.Status(fiber.StatusOK).JSON(model.Response{
-		Status: fiber.StatusOK,
-		Data:   comics,
+		Status:  fiber.StatusOK,
+		Message: "Ok",
+		Data:    comics,
 	})
 }

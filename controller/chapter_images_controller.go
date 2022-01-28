@@ -16,8 +16,18 @@ func ChapterImagesController(c *fiber.Ctx) error {
 			Data:    nil,
 		})
 	}
+
+	if chaperImages.Images == nil && chaperImages.Chapter == "" {
+		return c.Status(fiber.StatusNotFound).JSON(model.Response{
+			Status:  fiber.StatusNotFound,
+			Message: "Not Found",
+			Data:    nil,
+		})
+	}
+
 	return c.Status(fiber.StatusOK).JSON(model.Response{
-		Status: fiber.StatusOK,
-		Data:   chaperImages,
+		Status:  fiber.StatusOK,
+		Message: "Ok",
+		Data:    chaperImages,
 	})
 }
