@@ -23,7 +23,7 @@ func getSearchComic(s string, page string, limit string) ([]model.Comic, error) 
 		comic.Url = e.ChildAttr("div.tab-summary > div.post-title > h3 > a", "href")
 		comic.Title = e.ChildText("div.tab-summary > div.post-title > h3 > a")
 		comic.Thumbnail = e.ChildAttr("div > a > img", "src")
-		comic.Score = e.ChildText("div.tab-meta > div.meta-item.rating > div > span")
+		comic.Rating = e.ChildText("div.tab-meta > div.meta-item.rating > div > span")
 
 		var chapter model.Chapter
 		chapter.ChapterUrl = e.ChildAttr("div.tab-meta > div.meta-item.latest-chap > span.font-meta.chapter > a", "href")

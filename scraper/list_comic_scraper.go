@@ -27,7 +27,7 @@ func getListComic(page string, limit string) ([]model.Comic, error) {
 		comic.Url = e.ChildAttr("h3 > a", "href")
 		comic.Title = e.ChildText("h3 > a")
 		comic.Thumbnail = e.ChildAttr("img", "src")
-		comic.Score = e.ChildText("span.score")
+		comic.Rating = e.ChildText("span.score")
 
 		e.ForEach(".chapter-item", func(_ int, element *colly.HTMLElement) {
 			var chapter model.Chapter
