@@ -1,4 +1,4 @@
-# Unofficial Klikmanga Api
+# Komik Api
 
 - <a href="#daftar-komik-terbaru">Daftar Komik terbaru<a/>
 - <a href="#detail-komik">Detail Komik<a/>
