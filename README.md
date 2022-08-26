@@ -8,9 +8,9 @@
 ## Daftar Komik Terbaru
 
 ```http
-  https://api.sayuti.codes/comic/home/{page}?limit={limit}
-  https://api.sayuti.codes/comic/home/
-  https://api.sayuti.codes/comic/home/1?limit=20
+  https://api.sayuti.me/comic/home/{page}?limit={limit}
+  https://api.sayuti.me/comic/home/
+  https://api.sayuti.me/comic/home/1?limit=20
 ```
 
 Parameter page bersifat opsional,defaultnya adalah 1, yaitu halaman pertama, parameter page hanya dapat di isi dengan angka,dan harus lebih dari 0
@@ -19,43 +19,43 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 
 ### Contoh
 
-> https://api.sayuti.codes/comic/home/1?limit=2
+> https://api.sayuti.me/comic/home/1?limit=2
 
 ```json
   {
   "status": 200,
   "data": [
     {
-      "url": "https://klikmanga.com/manga/yuan-zun/",
+      "url": "https://klikmanga.id/manga/yuan-zun/",
       "title": "Yuan Zun",
-      "thumbnail": "https://klikmanga.com/wp-content/uploads/2018/08/23044-175x238.jpg",
+      "thumbnail": "https://klikmanga.id/wp-content/uploads/2018/08/23044-175x238.jpg",
       "score": "4.7",
       "LastChapter": [
         {
-          "chapter_url": "https://klikmanga.com/manga/yuan-zun/chapter-258/",
+          "chapter_url": "https://klikmanga.id/manga/yuan-zun/chapter-258/",
           "chapter": "Chapter 258",
           "date": "10 jam yang lalu"
         },
         {
-          "chapter_url": "https://klikmanga.com/manga/yuan-zun/chapter-257-5/",
+          "chapter_url": "https://klikmanga.id/manga/yuan-zun/chapter-257-5/",
           "chapter": "Chapter 257.5",
           "date": "10 jam yang lalu"
         }
       ]
     },
     {
-      "url": "https://klikmanga.com/manga/yofukashi-no-uta/",
+      "url": "https://klikmanga.id/manga/yofukashi-no-uta/",
       "title": "Yofukashi no Uta",
-      "thumbnail": "https://klikmanga.com/wp-content/uploads/2019/11/40969-1-175x238.jpg",
+      "thumbnail": "https://klikmanga.id/wp-content/uploads/2019/11/40969-1-175x238.jpg",
       "score": "4.7",
       "LastChapter": [
         {
-          "chapter_url": "https://klikmanga.com/manga/yofukashi-no-uta/chapter-68/",
+          "chapter_url": "https://klikmanga.id/manga/yofukashi-no-uta/chapter-68/",
           "chapter": "Chapter 68",
           "date": "10 jam yang lalu"
         },
         {
-          "chapter_url": "https://klikmanga.com/manga/yofukashi-no-uta/chapter-67/",
+          "chapter_url": "https://klikmanga.id/manga/yofukashi-no-uta/chapter-67/",
           "chapter": "Chapter 67",
           "date": "Okt 15, 2021"
         }
@@ -69,23 +69,23 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 ## Detail Komik
 
 ```http
-  https://api.sayuti.codes/comic/detail?url={url}
-  https://api.sayuti.codes/comic/detail?url=https://klikmanga.com/manga/yuan-zun/
+  https://api.sayuti.me/comic/detail?url={url}
+  https://api.sayuti.me/comic/detail?url=https://klikmanga.id/manga/yuan-zun/
 ```
 
 Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detailnya
 
 ### Contoh
 
-> https://api.sayuti.codes/comic/detail?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/
+> https://api.sayuti.me/comic/detail?url=https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/
 
 ```json
   {
   "status": 200,
   "data": {
-    "url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/",
+    "url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/",
     "title": "Isekai Majutsushi wa Mahou wo Tonaenai",
-    "thumbnail": "https://klikmanga.com/wp-content/uploads/2020/06/50056-193x278.jpeg",
+    "thumbnail": "https://klikmanga.id/wp-content/uploads/2020/06/50056-193x278.jpeg",
     "rating": "4.8",
     "authors": "Mochi",
     "artists": "Koppamu",
@@ -105,42 +105,42 @@ Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detail
     "synopsis": "Penyihir bernama Yard tiba tiba dipanggil ke dunia yang berbeda sebagai seorang Pahlawan. Penyihir di dunia ini tak sebanding jika dibandingkan dengan Yard yang datang dari dunia lain. Pahlawan lain yang dipanggil juga tak bisa di andalkan. Lebih dari itu, tidak mungkin kembali ke dunia yang lama lagi… Di dalam keputusasaan tersebut, Yard berusaha seorang diri. Bersiaplah, manusia di dunia ini. Dunia dimana ilmu sihir tertinggal. Aku punya mainan yang luar biasa di dalam box ini. Ijinkan aku bermain dengannya. Penyihir jahat bernama Yard menaklukkan dunia lain dengan Sihir Hitam yang luar biasa!",
     "chapters": [
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-8/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-8/",
         "chapter": "Chapter 8",
         "date": "20 jam yang lalu"
       },
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-7/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-7/",
         "chapter": "Chapter 7",
         "date": "Jan 22, 2021"
       },
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-6/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-6/",
         "chapter": "Chapter 6",
         "date": "Jan 16, 2021"
       },
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-5/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-5/",
         "chapter": "Chapter 5",
         "date": "Nov 19, 2020"
       },
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-4/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-4/",
         "chapter": "Chapter 4",
         "date": "Okt 31, 2020"
       },
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-3/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-3/",
         "chapter": "Chapter 3",
         "date": "Okt 26, 2020"
       },
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/",
         "chapter": "Chapter 2",
         "date": "Jul 27, 2020"
       },
       {
-        "chapter_url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/",
+        "chapter_url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/",
         "chapter": "Chapter 1",
         "date": "Jun 15, 2020"
       }
@@ -160,7 +160,7 @@ Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detail
       },
       {
         "name": "Sya-kun",
-        "profile_pic": "https://klikmanga.com/wp-content/uploads/2020/08/IMG_20200708_110721_110-1.jpg",
+        "profile_pic": "https://klikmanga.id/wp-content/uploads/2020/08/IMG_20200708_110721_110-1.jpg",
         "comment": "Lanjutkan,min… Ditunggu chapter selanjutnya",
         "date": "Jun 18, 2020 at 11:16 am"
       },
@@ -190,52 +190,52 @@ Query parameter url wajib di isi dengan url dari komik yang ingin dilihat detail
 ## Chapter
 
 ```http
-  https://api.sayuti.codes/comic/chapter?url={url}
-  https://api.sayuti.codes/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/
+  https://api.sayuti.me/comic/chapter?url={url}
+  https://api.sayuti.me/comic/chapter?url=https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/
 ```
 
 Query parameter url wajib di isi dengan url dari chapter yang ingin dilihat gambarnya
 
 ### Contoh
 
-> https://api.sayuti.codes/comic/chapter?url=https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/
+> https://api.sayuti.me/comic/chapter?url=https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/
 
 ```json
   {
   "status": 200,
   "data": {
     "chapter": "Chapter 2",
-    "url": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/",
-    "next": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-3/?style=list",
-    "prev": "https://klikmanga.com/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/?style=list",
+    "url": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-2/",
+    "next": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-3/?style=list",
+    "prev": "https://klikmanga.id/manga/isekai-majutsushi-wa-mahou-wo-tonaenai/chapter-1/?style=list",
     "images": [
-      "https://i3.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/001.jpg",
-      "https://i3.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/002.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/003.jpg",
-      "https://i0.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/004.jpg",
-      "https://i2.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/005.jpg",
-      "https://i3.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/006.jpg",
-      "https://i2.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/007.jpg",
-      "https://i3.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/008.jpg",
-      "https://i3.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/009.jpg",
-      "https://i0.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/010.jpg",
-      "https://i0.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/011.jpg",
-      "https://i3.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/012.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/013.jpg",
-      "https://i2.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/014.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/015.jpg",
-      "https://i2.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/016.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/017.jpg",
-      "https://i0.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/018.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/019.jpg",
-      "https://i0.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/020.jpg",
-      "https://i2.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/021.jpg",
-      "https://i0.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/022.jpg",
-      "https://i2.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/023.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/024.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/025.jpg",
-      "https://i1.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/026.jpg",
-      "https://i2.wp.com/img.klikmanga.com/data/manga_5ee697df588a9/chapter-2/027.jpg"
+      "https://i3.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/001.jpg",
+      "https://i3.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/002.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/003.jpg",
+      "https://i0.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/004.jpg",
+      "https://i2.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/005.jpg",
+      "https://i3.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/006.jpg",
+      "https://i2.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/007.jpg",
+      "https://i3.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/008.jpg",
+      "https://i3.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/009.jpg",
+      "https://i0.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/010.jpg",
+      "https://i0.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/011.jpg",
+      "https://i3.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/012.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/013.jpg",
+      "https://i2.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/014.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/015.jpg",
+      "https://i2.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/016.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/017.jpg",
+      "https://i0.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/018.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/019.jpg",
+      "https://i0.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/020.jpg",
+      "https://i2.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/021.jpg",
+      "https://i0.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/022.jpg",
+      "https://i2.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/023.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/024.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/025.jpg",
+      "https://i1.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/026.jpg",
+      "https://i2.wp.com/img.klikmanga.id/data/manga_5ee697df588a9/chapter-2/027.jpg"
     ],
     "Comments": [
       {
@@ -252,9 +252,9 @@ Query parameter url wajib di isi dengan url dari chapter yang ingin dilihat gamb
 ## Pencarian Komik
 
 ```http
-  https://api.sayuti.codes/comic/search/{page}?s={keyword}&limit={limit}
-  https://api.sayuti.codes/comic/search/1?s=dark&limit=2
-  https://api.sayuti.codes/comic/search/?s=dark
+  https://api.sayuti.me/comic/search/{page}?s={keyword}&limit={limit}
+  https://api.sayuti.me/comic/search/1?s=dark&limit=2
+  https://api.sayuti.me/comic/search/?s=dark
 ```
 
 Parameter page bersifat opsional,defaultnya adalah 1, yaitu halaman pertama, parameter page hanya dapat di isi dengan angka,dan harus lebih dari 0
@@ -265,33 +265,33 @@ Query parameter limit bersifat opsional, defaultnya adalah 32,dan harus lebih da
 
 ### Contoh
 
-> https://api.sayuti.codes/comic/search/1?s=dark&limit=2
+> https://api.sayuti.me/comic/search/1?s=dark&limit=2
 
 ```json
   {
   "status": 200,
   "data": [
     {
-      "url": "https://klikmanga.com/manga/dark-hole-another-survivor/",
+      "url": "https://klikmanga.id/manga/dark-hole-another-survivor/",
       "title": "Dark Hole: Another Survivor",
-      "thumbnail": "https://klikmanga.com/wp-content/uploads/2021/10/Dark-Hole-Another-Survivor-193x278.jpg",
+      "thumbnail": "https://klikmanga.id/wp-content/uploads/2021/10/Dark-Hole-Another-Survivor-193x278.jpg",
       "score": "0",
       "LastChapter": [
         {
-          "chapter_url": "https://klikmanga.com/manga/dark-hole-another-survivor/chapter-1/",
+          "chapter_url": "https://klikmanga.id/manga/dark-hole-another-survivor/chapter-1/",
           "chapter": "Chapter 1",
           "date": "12 jam yang lalu"
         }
       ]
     },
     {
-      "url": "https://klikmanga.com/manga/chotto-dake-ai-ga-omoi-dark-elf-ga-isekai-kara-oikakete-kita/",
+      "url": "https://klikmanga.id/manga/chotto-dake-ai-ga-omoi-dark-elf-ga-isekai-kara-oikakete-kita/",
       "title": "Chotto Dake ai ga Omoi Dark Elf ga Isekai Kara Oikakete Kita",
-      "thumbnail": "https://klikmanga.com/wp-content/uploads/2021/09/Chotto-Dake-ai-ga-Omoi-Dark-Elf-ga-Isekai-Kara-Oikakete-Kita-193x278.jpeg",
+      "thumbnail": "https://klikmanga.id/wp-content/uploads/2021/09/Chotto-Dake-ai-ga-Omoi-Dark-Elf-ga-Isekai-Kara-Oikakete-Kita-193x278.jpeg",
       "score": "5",
       "LastChapter": [
         {
-          "chapter_url": "https://klikmanga.com/manga/chotto-dake-ai-ga-omoi-dark-elf-ga-isekai-kara-oikakete-kita/chapter-1/",
+          "chapter_url": "https://klikmanga.id/manga/chotto-dake-ai-ga-omoi-dark-elf-ga-isekai-kara-oikakete-kita/chapter-1/",
           "chapter": "Chapter 1",
           "date": "2021-09-21 18:08:38"
         }

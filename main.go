@@ -13,7 +13,7 @@ func main() {
 
 	app.Use(logger.New())
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Dokumentasi sementara bisa dibaca di : https://github.com/Sayutizxc/klikmanga-api")
+		return c.SendString("Dokumentasi sementara bisa dibaca di : https://github.com/Sayutizxc/komik-api")
 	})
 	comic := app.Group("/comic")
 	comic.Get("/home/:page?", controller.ListComicController)
