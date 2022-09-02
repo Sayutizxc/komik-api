@@ -22,8 +22,8 @@ func getChapterImages(url string) (model.ChapterImages, error) {
 
 	c.OnHTML("div.main-col-inner", func(e *colly.HTMLElement) {
 		chapterImages.Chapter = e.ChildText("div > div.c-breadcrumb > ol > li.active")
-		chapterImages.Prev = e.ChildAttr("div.nav-previous > a", "href")
-		chapterImages.Next = e.ChildAttr("div.nav-next > a", "href")
+		chapterImages.Prev = e.ChildAttr("div.nav-previous > a.prev_page", "href")
+		chapterImages.Next = e.ChildAttr("div.nav-next > a.next_page", "href")
 		e.ForEach(".page-break.no-gaps", func(i int, element *colly.HTMLElement) {
 			chapterImages.Images = append(chapterImages.Images, element.ChildAttr("img", "src"))
 		})
